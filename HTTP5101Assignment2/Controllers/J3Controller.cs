@@ -51,17 +51,20 @@ namespace HTTP5101Assignment2.Controllers
                 int dice1 = num.Next(1, 7);
                 int dice2 = num.Next(1, 7);
 
+                //Checks whether player 1 rolled a higher number than player 2
                 if (dice1 > dice2)
                 {
+                    //If player one rolled a higher number than player 2 loses the amount of points that was rolled by player 1
                     player2 -= dice1;
                   
                    
                     
 
                 }
-
+                //Checks whether player 2 rolled a higher number than player 1
                 else if (dice2 > dice1)
                 {
+                    //If player 2 rolled a higher number than player 1 loses the amount of points that was rolled by player 2
                     player1 -= dice2;
                   
                    
